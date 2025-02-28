@@ -15,7 +15,7 @@ git clone <repository-url>
 cd Personal-Tasks
 
 # Create and switch to a new branch for your task
-git checkout -b task/your-student-id/task-name
+git checkout -b task/your-name/task-name
 ```
 
 ### 2. Adding Your Work
@@ -34,7 +34,7 @@ git add your-folder/*
 git commit -m "Add solution for Task X"
 
 # Push to your branch
-git push origin task/your-student-id/task-name
+git push origin task/your-name/task-name
 ```
 
 ### 4. Creating a Pull Request
@@ -86,3 +86,98 @@ your-name/
 ## Need Help?
 
 If you encounter any issues with the submission process, please contact the course instructor or teaching assistants.
+
+---
+
+<div dir="rtl">
+
+# مخزن تکالیف فردی
+
+این مخزن برای ارسال تکالیف برنامه‌نویسی فردی دوره پایتون پیشرفته طراحی شده است. لطفاً این دستورالعمل‌ها را برای ارسال کار خود با دقت دنبال کنید.
+
+## ساختار مخزن
+
+هر دانشجو در این مخزن یک پوشه اختصاصی دارد. شما فقط به پوشه شخصی خود دسترسی نوشتن دارید که در فایل CODEOWNERS مشخص شده است.
+
+## نحوه ارسال تکالیف
+
+### ۱. راه‌اندازی اولیه
+```bash
+# Clone کردن مخزن
+git clone <repository-url>
+cd Personal-Tasks
+
+# ایجاد و تغییر به شاخه جدید برای تکلیف
+git checkout -b task/your-name/task-name
+```
+
+### ۲. اضافه کردن کار
+- فایل‌ها را فقط در پوشه تعیین شده خود قرار دهید
+- حتماً موارد زیر را شامل شود:
+  - فایل‌های کد منبع (.py)
+  - Requirements.txt (در صورت نیاز)
+  - مستندات مختصر توضیح راه‌حل
+
+### ۳. Commit و Push
+```bash
+# اضافه کردن تغییرات
+git add your-folder/*
+
+# Commit با پیام توصیفی
+git commit -m "Add solution for Task X"
+
+# Push به شاخه
+git push origin task/your-name/task-name
+```
+
+### ۴. ایجاد Pull Request
+۱. به مخزن در GitHub بروید
+۲. روی "Pull Requests" و سپس "New Pull Request" کلیک کنید
+۳. شاخه خود را به عنوان منبع انتخاب کنید
+۴. توضیح واضحی از تغییرات بنویسید
+۵. درخواست را ثبت کنید
+
+## نکات مهم
+
+- ⚠️ هرگز مستقیماً به شاخه main کامیت نکنید
+- ⚠️ فقط فایل‌های داخل پوشه خود را تغییر دهید
+- ✅ هر تکلیف باید در یک شاخه جداگانه ارسال شود
+- ✅ منتظر بررسی استاد قبل از merge باشید
+- ❌ درخواست‌های تغییر پوشه‌های دیگر دانشجویان رد خواهد شد
+
+## بهترین رویکرد ها
+
+۱. کامیت‌های خود را خوب توصیف کنید
+۲. کد خود را قبل از ارسال به دقت تست کنید
+۳. راهنمای سبک پایتون (PEP 8) را دنبال کنید
+۴. مستندات مناسب را شامل کنید
+۵. به نظرات بررسی به موقع پاسخ دهید
+
+## ساختار پوشه دانشجو
+
+### راه‌اندازی پوشه شخصی شما
+۱. `student-readme-template.md` را به پوشه خود کپی کنید
+۲. آن را به `README.md` تغییر نام دهید
+۳. اطلاعات خود را پر کنید
+۴. پس از تکمیل هر تکلیف آن را به‌روزرسانی کنید
+
+### سازماندهی پوشه
+```
+your-name/
+├── README.md           # سند پیگیری پیشرفت شما
+├── Session-1/             # هر تکلیف در پوشه خود
+│   ├── file1
+│   ├── file2
+│   └── README.md
+├── Session-2/
+│   ├── file1
+│   ├── file2
+│   └── README.md
+...
+```
+
+## نیاز به کمک دارید؟
+
+اگر با مشکلاتی در فرآیند ارسال مواجه شدید، لطفاً با استاد دوره یا دستیاران آموزشی تماس بگیرید.
+
+</div>
