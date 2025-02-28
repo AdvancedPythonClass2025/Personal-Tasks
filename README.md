@@ -60,6 +60,29 @@ git push origin task/your-student-id/task-name
 4. Include proper documentation
 5. Respond to review comments promptly
 
+## Student Folder Structure
+
+### Setting Up Your Personal Folder
+1. Copy the `student-readme-template.md` to your folder
+2. Rename it to `README.md`
+3. Fill in your information
+4. Update it after completing each task
+
+### Folder Organization
+```
+your-name/
+├── README.md           # Your progress tracking document
+├── Session-1/             # Each task in its own folder
+│   ├── file1
+│   ├── file2
+│   └── README.md
+├── Session-2/
+│   ├── file1
+│   ├── file2
+│   └── README.md
+...
+```
+
 ## Need Help?
 
 If you encounter any issues with the submission process, please contact the course instructor or teaching assistants.
