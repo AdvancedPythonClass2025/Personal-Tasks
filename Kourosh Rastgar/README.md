@@ -6,7 +6,11 @@
 ## Tasks Overview
 
 ### Task 1: [Task Name]
+<<<<<<< Updated upstream
 - **Date Submitted:** [DD/MM/YYYY]
+=======
+- **Date Submitted:** 03/01/2025
+>>>>>>> Stashed changes
 - **Branch Name:** task/[student-name]/[task-name]
 - **Files:**
   - `task1.py`
