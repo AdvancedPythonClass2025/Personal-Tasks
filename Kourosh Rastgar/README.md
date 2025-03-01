@@ -1,16 +1,12 @@
 # Student Progress Track
 
 ## Student Information
-- **Name:** [Your Full Name]
+- **Name:** kourosh rastegar
 
 ## Tasks Overview
 
 ### Task 1: [Task Name]
-<<<<<<< Updated upstream
 - **Date Submitted:** [DD/MM/YYYY]
-=======
-- **Date Submitted:** 03/01/2025
->>>>>>> Stashed changes
 - **Branch Name:** task/[student-name]/[task-name]
 - **Files:**
   - `task1.py`
@@ -34,6 +30,4 @@
 - Areas for improvement
 
 ---
-*Last Updated: [DD/MM/YYYY]*
-
----
+*Last Updated: [D3/01/2025]*
