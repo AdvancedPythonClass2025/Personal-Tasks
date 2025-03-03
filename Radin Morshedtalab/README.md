@@ -1,7 +1,7 @@
 # Student Progress Track
 
 ## Student Information
-- **Name:** [radin]
+- **Name:** [radinmorshedtalab]
 
 ## Tasks Overview
 
