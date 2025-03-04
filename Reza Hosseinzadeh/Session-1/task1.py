@@ -25,7 +25,7 @@ while True :
            
     try :
 
-        print("baraye mohasebe facrutiel adad vared konid\n\n\n\n\n")
+        print("baraye mohasebe facturial adad vared konid\n\n\n\n\n")
         inpt = input("_____:")
         print(f"\n\n{inpt}! = {factrl(inpt)} \n")
         break
@@ -35,8 +35,14 @@ while True :
         CClear()
         print("lotfan adad vared konid\n\n")
         
-
-    except Exception:
+    except RecursionError:
 
         CClear()
-        print("khataye nashenakhte\n\n")
+        print("adad vared shode bayad kochiktar az 998 bashe\n\n")
+
+    except EOFError:
+
+        CClear()
+        print("hich vrodie daryaft nashod\n\n")
+
+    
