@@ -1,23 +1,25 @@
-## Student Information
-- **Name:** Reza hosseinzade
+# Factorial project
 
-## Tasks Overview
+## Introduction
+Welcome to the Factorial project! This Python script is designed to compute the factorial of a specified integer, demonstrating essential programming techniques such as loops, conditionals, and function definitions.
 
-### Task 1: Factorial
-- **Date Submitted:** [29-2-2025]
-- **Branch Name:** task/Reza-hosseinzade/Factorial
-- **Files:**
+## Project Details
+
+- **Title:** Factorial
+- **Date of Submission:** February 29, 2025
+- **Branch:** task/Reza-hosseinzade/Factorial
+- **Main File:** 
   - `task1.py`
-- **Description:**
-  A simple code that calculates the factorial of a given number and prints it using loops, conditions, and definitions.
-- **Challenges Faced:**
-  - Error when using try-except inside a definition I solved that by using it outside the definition.
+
+## Description
+This project implements a straightforward algorithm to calculate the factorial of a number. The script prompts the user for input, processes the calculation using loops and conditions, and outputs the final result.
+
+## Challenges Faced
+During the development process, I encountered a challenge with the placement of error handling using try-except blocks. Initially, I attempted to implement it within the function, which led to complications. I resolved this by moving the error handling outside the function, resulting in a more robust solution.
 
 ## Skills Developed
-- [ ] Basic use of loops , conditions , and definitions
-
-
----
-*Last Updated: 29-2-2025*
+- [ ] Gained foundational skills in using loops, conditional statements, and defining functions in Python.
 
 ---
+
+*Last Updated: 4 / 3 / 2025*
