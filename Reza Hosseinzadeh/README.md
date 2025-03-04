@@ -14,12 +14,12 @@
   A simple code that calculates the factorial of a given number and prints it using loops, conditions, and definitions.
 - **Challenges Faced:**
   - Error when using try-except inside a definition I solved that by using it outside the definition.
-
+  - Error when using a number greater than 998 , I solved that by using RecursionError except .
 ## Skills Developed
 - [ ] Basic use of loops , conditions , and definitions
 
 
 ---
-*Last Updated: 29-2-2025*
+*Last Updated: 4-3--2025*
 
 ---
