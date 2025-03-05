@@ -1,25 +1,19 @@
 # Student Progress Track
 
 ## Student Information
-- **Name:** [Your Full Name]
+- **Name:** kourosh rastegar
 
 ## Tasks Overview
 
-### Task 1: [Task Name]
-<<<<<<< Updated upstream
-- **Date Submitted:** [DD/MM/YYYY]
-=======
-- **Date Submitted:** 03/01/2025
->>>>>>> Stashed changes
-- **Branch Name:** task/[student-name]/[task-name]
+### Task 1: factorial
+- **Date Submitted:** 03/05/2025
+- **Branch Name:** 
 - **Files:**
-  - `task1.py`
-  - `test_task1.py`
+  - `factorial.py`
 - **Description:**
-  Brief description of what the task does and how you implemented it.
+- 
 - **Challenges Faced:**
-  - Challenge 1 and how you resolved it
-  - Challenge 2 and how you resolved it
+- 
 
 ### Task 2: [Task Name]
 // ... (repeat the same structure for each task)
@@ -34,6 +28,4 @@
 - Areas for improvement
 
 ---
-*Last Updated: [DD/MM/YYYY]*
-
----
+*Last Updated: 03/05/2025*
