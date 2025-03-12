@@ -34,4 +34,3 @@
 <div dir="rtl">
 
   - `test_task1.py`
-  
