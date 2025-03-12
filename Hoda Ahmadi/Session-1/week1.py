@@ -10,10 +10,10 @@ def factorial(n):
 try:
     number = int(input("please enter valid number"))
     if number < 0:
-        print("please enter a non negative number")
+        raise ValueError("please enter a non negative number")
     else:
         result = factorial(number)
-        print(f"the factorial of {number} is {result}")
+        raise ValueError(f"the factorial of {number} is {result}")
 except ValueError:
     print("incorrect please enter a valid number")
 
