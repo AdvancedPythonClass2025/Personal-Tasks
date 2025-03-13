@@ -18,8 +18,8 @@ This project implements a simple car management system using a class called `mas
 - I faced a challenge while implementing the method to change the car color. I had to ensure that the previous color was stored and displayed correctly after the change, which required careful handling of class attributes.
 
 ## Skills Developed
-- [ ] Gained foundational skills in using classes and methods in Python.
-- [ ] Improved problem-solving skills by addressing challenges related to attribute management.
+- [x] Gained foundational skills in using classes and methods in Python.
+- [x] Improved problem-solving skills by addressing challenges related to attribute management.
 
 ---
 
