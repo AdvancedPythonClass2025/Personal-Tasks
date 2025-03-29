@@ -5,31 +5,24 @@
 
 ## Tasks Overview
 
-### Task 1: [Task yasna]
+### Task 1: factorial
 - **Date Submitted:** [4/3/2025]
-- **Branch yasna:** task/[student-yasna]/[task-factoril]
+- **Branch yasna:** task/yasna-najafzade/factoril
 - **Files:**
   - `task1.py`
-  - `test_task1.py`
 - **Description:**
-  Brief description of what the task does and how you implemented it.
-- **Challenges Faced:**
-  - Challenge 1 and how you resolved it
-  - Challenge 2 and how you resolved it
+  codi ke factoriel adad dade shode ro hesab mikone
 
-### Task 2: [Task yasna]
-// ... (repeat the same structure for each task)
+### Task 2: car-class
 
-## Skills Developed
-- [ ] Skills used to do the task
-// Add more skills as you learn them throughout the course
-
-## Notes
-- Any additional notes about your learning journey
-- Questions for future discussion
-- Areas for improvement
+- **Date Submitted:** [29/3/2025]
+- **Branch yasna:** task/yasna_najafzadeh/car
+- **Files:**
+  - `task2.py`
+- **Description:**
+  yek class ke mitone etelaat mashin ro zakhire kone va rangesho avaz kone.
 
 ---
-*Last Updated: [4/3/2025]*
+*Last Updated: [29/3/2025]*
 
 --
