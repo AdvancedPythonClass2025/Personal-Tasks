@@ -18,3 +18,7 @@ class car:
     
         
         self.color = new_color
+
+my_car = car("mercedes G_class ","black", 2025 )
+my_car .display_info() 
+
