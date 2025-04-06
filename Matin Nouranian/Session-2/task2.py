@@ -4,8 +4,6 @@ class Car :
         self.rang = rang
         self.salsakht = salsakht
     def namayesh_eteleat(self):
-        print("""model mashine : {}
-               rang : {}
-              salsakht : {}""".format(self.model,self.rang,self.salsakht))
+        print("model mashine : {} \nrang : {} \nsalsakht : {}".format(self.model,self.rang,self.salsakht))
 car = Car("pride","sefid","1380")
 car.namayesh_eteleat()
