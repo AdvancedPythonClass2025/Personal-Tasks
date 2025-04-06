@@ -8,6 +8,8 @@ class Car :
         self.salsakht = salsakht
     def namayesh_eteleat(self):
         print("model mashine : {} \nrang : {} \nsalsakht : {}".format(self.model,self.rang,self.salsakht))
+    def taghir_rang(self,rang_jadid):
+        pass
 Clear()
 car = Car("pride","sefid","1380")
 car.namayesh_eteleat()
