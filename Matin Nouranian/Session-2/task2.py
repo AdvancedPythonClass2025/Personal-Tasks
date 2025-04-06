@@ -9,7 +9,12 @@ class Car :
     def namayesh_eteleat(self):
         print("model mashine : {} \nrang : {} \nsalsakht : {}".format(self.model,self.rang,self.salsakht))
     def taghir_rang(self,rang_jadid):
-        pass
-Clear()
+        self.rang = rang_jadid
+        print('rang mashine be ---{}--- taghire kard'.format(rang_jadid))
+
 car = Car("pride","sefid","1380")
+car2 = Car("lamborgini","meshki","2023")
+car3 = Car('partol',"gray","2000")
+Clear()
 car.namayesh_eteleat()
+car.taghir_rang('meshki')
