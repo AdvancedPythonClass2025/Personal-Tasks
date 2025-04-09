@@ -1,0 +1,14 @@
+import csv
+from collections import Counter
+import re
+def count_words_from_csv(file_name):
+    all_text = ""
+    with open(file_name, 'r', encoding='utf-8') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            all_text += ' '.join(row) + " "
+    words = re.findall(r'\b\w+\b', all_text.lower()
+    word_counts = Counter(words)
+    for word, count in word_counts.items():
+        print(f"{word}: {count}")
+count_words_from_csv("data.csv")
