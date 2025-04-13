@@ -5,19 +5,19 @@ class Car:
         self.color = color
 
     def display_info(self):
-        print(f"مدل: {self.model}")
-        print(f"سال ساخت: {self.year}")
-        print(f"رنگ: {self.color}")
+        print(f"model: {self.model}")
+        print(f"year model: {self.year}")
+        print(f"color: {self.color}")
 
     def change_color(self, new_color):
         self.color = new_color
-        print(f"رنگ خودرو به {new_color} تغییر کرد.")
+        print(f"color of the car changed to: {new_color}")
 
 
-my_car = Car("پراید", 1399, "سفید")
+my_car = Car("pride", 1399, "white")
 
 my_car.display_info()
 
-my_car.change_color("مشکی")
+my_car.change_color("black")
 
 my_car.display_info()
