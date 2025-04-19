@@ -5,7 +5,7 @@
 
 ## Tasks Overview
 
-### Task 1: 
+### Task 2: 
 - **Date Submitted:** [14-4-2025
 - **Branch Name:**  task2-Amin Azimi
 - **Description:**  task factorial
