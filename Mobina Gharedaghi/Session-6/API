@@ -1,0 +1,24 @@
+import requests
+
+
+api_key = "مازندران"
+city = "بابل"
+url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric&lang=fa"
+
+response = requests.get(url)
+
+if response.status_code == 200:
+    data = response.json()
+    weather = data['weather'][0]['description']
+    temp = data['main']['temp']
+    humidity = data['main']['humidity']
+    wind_speed = data['wind']['speed']
+
+    print(f"وضعیت آب و هوا در {city}:")
+    print(f"وضعیت: {weather}")
+    print(f"دما: {temp}°C")
+    print(f"رطوبت: {humidity}%")
+    print(f"سرعت باد: {wind_speed} متر بر ثانیه")
+else:
+
+    print("خطا در دریافت اطلاعات آب و هوا.")
