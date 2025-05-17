@@ -1,0 +1,80 @@
+import sqlite3
+
+conn = sqlite3.connect('users.db')
+cursor = conn.cursor()
+
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT UNIQUE NOT NULL
+)
+''')
+conn.commit()
+
+def create_user(name, email):
+    try:
+        cursor.execute("INSERT INTO users (name, email) VALUES (?, ?)", (name, email))
+        conn.commit()
+        print("✅ کاربر با موفقیت ایجاد شد.")
+    except sqlite3.IntegrityError:
+        print("⚠️ خطا: ایمیل تکراری است.")
+
+def read_users():
+    cursor.execute("SELECT * FROM users")
+    users = cursor.fetchall()
+    print("📋 لیست کاربران:")
+    for user in users:
+        print(user)
+
+def update_user(user_id, new_name, new_email):
+    cursor.execute("UPDATE users SET name = ?, email = ? WHERE id = ?", (new_name, new_email, user_id))
+    conn.commit()
+    if cursor.rowcount:
+        print("🔄 کاربر بروزرسانی شد.")
+    else:
+        print("❌ کاربر با این شناسه پیدا نشد.")
+
+def delete_user(user_id):
+    cursor.execute("DELETE FROM users WHERE id = ?", (user_id,))
+    conn.commit()
+    if cursor.rowcount:
+        print("🗑️ کاربر حذف شد.")
+    else:
+        print("❌ کاربری با این شناسه وجود ندارد.")
+
+# ==== نمونه استفاده ====
+if name == '__main__':
+    while True:
+        print("\n1. ایجاد کاربر")
+        print("2. مشاهده کاربران")
+        print("3. بروزرسانی کاربر")
+        print("4. حذف کاربر")
+        print("5. خروج")
+
+        choice = input("یک گزینه را انتخاب کنید: ")
+
+        if choice == '1':
+            name = input("نام: ")
+            email = input("ایمیل: ")
+            create_user(name, email)
+
+        elif choice == '2':
+            read_users()
+
+        elif choice == '3':
+            user_id = int(input("شناسه کاربر برای بروزرسانی: "))
+            new_name = input("نام جدید: ")
+            new_email = input("ایمیل جدید: ")
+            update_user(user_id, new_name, new_email)
+
+        elif choice == '4':
+            user_id = int(input("شناسه کاربر برای حذف: "))
+            delete_user(user_id)
+
+        elif choice == '5':
+            print("👋 خروج از برنامه.")
+            break
+
+        else:
+            print("❌ گزینه نامعتبر است.")
