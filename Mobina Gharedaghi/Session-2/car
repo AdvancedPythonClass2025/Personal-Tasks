@@ -1,0 +1,33 @@
+class Car:
+    def __init__(self, model, year, color):
+        self.model = model
+        self.year = year
+        self.color = color
+
+    def display_info(self):
+        print(f"مدل: {self.model}")
+        print(f"سال ساخت: {self.year}")
+        print(f"رنگ: {self.color}")
+        print("-" * 30)
+
+    def change_color(self, new_color):
+        self.color = new_color
+        print(f"رنگ خودرو به {new_color} تغییر کرد.")
+
+car1 = Car("فورد موستانگ", 2020, "قرمز")
+car2 = Car("دوج چلنجر", 2021, "مشکی")
+car3 = Car("مرسدس بنز G کلاس", 2023, "نقره‌ای")
+
+print("اطلاعات اولیه خودروها:")
+car1.display_info()
+car2.display_info()
+car3.display_info()
+
+print("تغییر رنگ دوج چلنجر به آبی...")
+car2.change_color("آبی")
+
+
+print("\nاطلاعات به‌روز شده خودروها:")
+car1.display_info()
+car2.display_info()
+car3.display_info()
