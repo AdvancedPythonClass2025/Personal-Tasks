@@ -1,0 +1,28 @@
+import threading
+
+class Logger:
+    _instance = None
+    _lock = threading.Lock()
+
+    def __new__(cls, logfile='log.txt'):
+        if cls._instance is None:
+            with cls._lock:
+                if cls._instance is None:
+                    cls._instance = super(Logger, cls).__new__(cls)
+                    cls._instance._logfile = logfile
+                    cls._instance._file = open(logfile, 'a')
+        return cls._instance
+
+    def log(self, message):
+        self._file.write(message + '\n')
+        self._file.flush()
+
+    def __del__(self):
+        self._file.close()
+
+# تست Singleton
+logger1 = Logger()
+logger2 = Logger()
+logger1.log("این یک پیام لاگ است.")
+logger2.log("این هم یک پیام دیگر است.")
+print(logger1 is logger2)
