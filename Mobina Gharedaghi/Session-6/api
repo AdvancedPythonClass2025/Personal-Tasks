@@ -1,0 +1,29 @@
+import requests
+
+
+api_key = "123abc456def789ghi" 
+# شهر مورد نظر (بابل، ایران)
+city = "Babol,IR"
+
+
+url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric&lang=fa"
+
+
+response = requests.get(url)
+
+
+if response.status_code == 200:
+    data = response.json()
+    city_name = data['name']
+    weather = data['weather'][0]['description']
+    temperature = data['main']['temp']
+    humidity = data['main']['humidity']
+    wind_speed = data['wind']['speed']
+
+    print(f"وضعیت آب‌وهوا در {city_name}:")
+    print(f"آب‌وهوا: {weather}")
+    print(f"دما: {temperature} درجه سانتی‌گراد")
+    print(f"رطوبت: {humidity}%")
+    print(f"سرعت باد: {wind_speed} متر بر ثانیه")
+else:
+    print("❌ خطا در دریافت اطلاعات آب‌وهوا. لطفاً کلید API را بررسی کنید.")
