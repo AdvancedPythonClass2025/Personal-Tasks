@@ -25,13 +25,25 @@
   A simple car management system that allows users to create car objects, display their information, and change their color.
 - **Challenges Faced:**
   - Ensured proper handling of class attributes when changing car color to avoid incorrect displays.
+- **Skills Developed**
+- [x] Basic use of loops, conditions, and definitions.
+- [x] Gained foundational skills in using classes and methods in Python.
 
-## Skills Developed
-- [ ] Basic use of loops, conditions, and definitions.
-- [ ] Gained foundational skills in using classes and methods in Python.
+
+### Task3: Decorator Zaman
+
+ - **Title:** Decorator Zaman
+ - **Date of Submission:** 09-06-2026
+ - **Branch:** task/Reza-Hosseinzade/decorator
+ - **Files:** 
+   - `decorator.py`
+ - **Description**
+ This project utilizes Python decorators to calculate and display the execution time of functions. The decorator wraps a target function and measures the elapsed time between the function's start and end, enhancing performance analysis.
+- **Skills Developed**
+ - [x] Improved understanding of Python decorators.
 
 ---
 
-*Last Updated: 11-03-2025*
+ *Last Updated: 09-06-2026*
 
 ---
