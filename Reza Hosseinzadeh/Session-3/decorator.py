@@ -30,3 +30,11 @@ def zoj_fard(adad):
     
     else :
         return f"\nadad {adad} Fard hast\n"
+
+CClear()
+
+vrodi    = int(input("\nadad ra vared konid :_____ "))
+
+CClear()
+
+print(zoj_fard(vrodi))
