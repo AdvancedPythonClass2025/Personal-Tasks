@@ -21,3 +21,12 @@ def zaman(func):
     
     return Wrapper
 
+
+@zaman
+def zoj_fard(adad):
+    
+    if adad % 2 == 0 :
+        return f"\nadad {adad} Zoj hast\n"
+    
+    else :
+        return f"\nadad {adad} Fard hast\n"
